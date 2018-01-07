@@ -1,0 +1,1 @@
+create unique index IDX_CATALOG_TARIFF_LOSES_UK_NAME on CATALOG_TARIFF_LOSES (NAME) where DELETE_TS is null ;

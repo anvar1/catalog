@@ -4,5 +4,11 @@
           insertBefore="administration">
         <item screen="catalog$TariffBase.browse"/>
         <item screen="catalog$VehicleModel.browse"/>
+        <item screen="catalog$TariffTerritory.browse"/>
+        <item screen="catalog$TariffLoses.browse"/>
+        <item screen="catalog$TariffExperience.browse"/>
+        <item screen="catalog$TariffSeason.browse"/>
+        <item screen="catalog$TariffTerm.browse"/>
+        <item screen="catalog$TariffAge.browse"/>
     </menu>
 </menu-config>

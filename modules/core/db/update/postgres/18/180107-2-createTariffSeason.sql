@@ -1,0 +1,1 @@
+create unique index IDX_CATALOG_TARIFF_SEASON_UK_NAME on CATALOG_TARIFF_SEASON (NAME) where DELETE_TS is null ;

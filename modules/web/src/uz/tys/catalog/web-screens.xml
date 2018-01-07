@@ -5,4 +5,16 @@
             template="uz/tys/catalog/web/tariffbase/tariff-base-browse.xml"/>
     <screen id="catalog$VehicleModel.browse"
             template="uz/tys/catalog/web/vehiclemodel/vehicle-model-browse.xml"/>
+    <screen id="catalog$TariffTerritory.browse"
+            template="uz/tys/catalog/web/tariffterritory/tariff-territory-browse.xml"/>
+    <screen id="catalog$TariffLoses.browse"
+            template="uz/tys/catalog/web/tariffloses/tariff-loses-browse.xml"/>
+    <screen id="catalog$TariffExperience.browse"
+            template="uz/tys/catalog/web/tariffexperience/tariff-experience-browse.xml"/>
+    <screen id="catalog$TariffSeason.browse"
+            template="uz/tys/catalog/web/tariffseason/tariff-season-browse.xml"/>
+    <screen id="catalog$TariffTerm.browse"
+            template="uz/tys/catalog/web/tariffterm/tariff-term-browse.xml"/>
+    <screen id="catalog$TariffAge.browse"
+            template="uz/tys/catalog/web/tariffage/tariff-age-browse.xml"/>
 </screen-config>

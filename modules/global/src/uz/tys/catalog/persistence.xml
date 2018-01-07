@@ -5,5 +5,11 @@
                       transaction-type="RESOURCE_LOCAL">
         <class>uz.tys.catalog.entity.VehicleModel</class>
         <class>uz.tys.catalog.entity.TariffBase</class>
+        <class>uz.tys.catalog.entity.TariffTerritory</class>
+        <class>uz.tys.catalog.entity.TariffLoses</class>
+        <class>uz.tys.catalog.entity.TariffExperience</class>
+        <class>uz.tys.catalog.entity.TariffSeason</class>
+        <class>uz.tys.catalog.entity.TariffTerm</class>
+        <class>uz.tys.catalog.entity.TariffAge</class>
     </persistence-unit>
 </persistence>
