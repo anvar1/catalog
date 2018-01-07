@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<app-component xmlns="http://schemas.haulmont.com/cuba/app-component.xsd"
+               dependsOn="com.haulmont.cuba">
+    <module blocks="*"
+            name="global">
+        <artifact appJar="true"
+                  name="cat-global"/>
+        <property name="cuba.persistenceConfig"
+                  value="+uz/tys/catalog/persistence.xml"/>
+        <property name="cuba.metadataConfig"
+                  value="+uz/tys/catalog/metadata.xml"/>
+        <property name="cuba.viewsConfig"
+                  value="+uz/tys/catalog/views.xml"/>
+    </module>
+    <module blocks="core"
+            dependsOn="global"
+            name="core">
+        <artifact appJar="true"
+                  name="cat-core"/>
+        <artifact classifier="db"
+                  configuration="dbscripts"
+                  ext="zip"
+                  name="cat-core"/>
+        <property name="cuba.springContextConfig"
+                  value="+uz/tys/catalog/spring.xml"/>
+        <property name="cuba.mainMessagePack"
+                  value="+uz.tys.catalog.core"/>
+    </module>
+    <module blocks="web,desktop"
+            dependsOn="global"
+            name="gui">
+        <artifact appJar="true"
+                  name="cat-gui"/>
+    </module>
+    <module blocks="web"
+            dependsOn="gui"
+            name="web">
+        <artifact appJar="true"
+                  name="cat-web"/>
+        <artifact classifier="web"
+                  configuration="webcontent"
+                  ext="zip"
+                  name="cat-web"/>
+        <property name="cuba.springContextConfig"
+                  value="+uz/tys/catalog/web-spring.xml"/>
+        <property name="cuba.dispatcherSpringContextConfig"
+                  value="+uz/tys/catalog/web-dispatcher-spring.xml"/>
+        <property name="cuba.windowConfig"
+                  value="+uz/tys/catalog/web-screens.xml"/>
+        <property name="cuba.menuConfig"
+                  value="+uz/tys/catalog/web-menu.xml"/>
+        <property name="cuba.permissionConfig"
+                  value="+uz/tys/catalog/web-permissions.xml"/>
+        <property name="cuba.mainMessagePack"
+                  value="+uz.tys.catalog.web"/>
+    </module>
+</app-component>

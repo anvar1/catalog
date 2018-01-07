@@ -1,0 +1,1 @@
+create unique index IDX_CATALOG_VEHICLE_MODEL_UK_NAME on CATALOG_VEHICLE_MODEL (NAME) where DELETE_TS is null ;

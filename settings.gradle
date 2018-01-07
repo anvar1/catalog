@@ -1,0 +1,6 @@
+rootProject.name = 'catalog'
+include(':cat-global', ':cat-core', ':cat-gui', ':cat-web')
+project(':cat-global').projectDir = new File(settingsDir, 'modules/global')
+project(':cat-core').projectDir = new File(settingsDir, 'modules/core')
+project(':cat-gui').projectDir = new File(settingsDir, 'modules/gui')
+project(':cat-web').projectDir = new File(settingsDir, 'modules/web')

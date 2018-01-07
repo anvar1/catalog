@@ -1,0 +1,2 @@
+create unique index IDX_CATALOG_TARIFF_BASE_UK_ORDER_ on CATALOG_TARIFF_BASE (ORDER_) where DELETE_TS is null ;
+create unique index IDX_CATALOG_TARIFF_BASE_UK_VEHICLE on CATALOG_TARIFF_BASE (VEHICLE) where DELETE_TS is null ;
